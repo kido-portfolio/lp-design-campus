@@ -1,0 +1,93 @@
+:root {
+  /*-------------------------
+    Layout
+  -------------------------*/
+  --header-h: 64px;
+  --header-h-pc: 82px;
+
+  /*-------------------------
+    Color
+  -------------------------*/
+  /* Text */
+  --text-color-primary: #333;
+  --text-color-secondary: #0fa9b5; /* 見出し・アクセント文字（要スポイト確認） */
+  --text-color-thirdly: #fff;
+  --text-color-body: #333;
+  --text-color-header: #333;
+  --text-color-button: #fff;
+
+  /* Background */
+  --bg-color-body: #fff;
+  --bg-color-header: #fff;
+  --bg-color-primary: #0fa9b5; /* メインカラー：ティール（要スポイト確認） */
+  --bg-color-secondary: #f13c68; /* CTA：ピンク（要スポイト確認） */
+  --bg-color-thirdly: #e6f9fb; /* 悩みセクションの薄い水色（要スポイト確認） */
+  --bg-color-faq: #f5f5f5; /* FAQセクションの薄いグレー（要スポイト確認） */
+  --bg-color-footer: #0fa9b5;
+
+  /* Border */
+  --border-color-primary: #0fa9b5;
+
+  /*-------------------------
+    Transition
+  -------------------------*/
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.4s ease;
+}
+
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: var(--header-h);
+
+  @media screen and (min-width: 768px) {
+    scroll-padding-top: var(--header-h-pc);
+  }
+}
+
+body {
+  padding-block-start: var(--header-h);
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color-primary);
+
+  @media screen and (min-width: 768px) {
+    padding-block-start: var(--header-h-pc);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-main);
+  outline-offset: 2px;
+}
