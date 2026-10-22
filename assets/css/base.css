@@ -4,6 +4,7 @@
   -------------------------*/
   --header-h: 64px;
   --header-h-pc: 82px;
+  --header-h-minus: calc(var(--header-h) * -1);
 
   /*-------------------------
     Color
@@ -49,6 +50,8 @@ html {
 }
 
 body {
+  /* overflow: hidden; */
+
   padding-block-start: var(--header-h);
 
   font-family: 'Noto Sans JP', sans-serif;

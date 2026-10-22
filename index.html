@@ -38,42 +38,54 @@
 </head>
 <body>
 
-</body>
-<!-- ===== Header ===== -->
-<header class="l-header">
-  <div class="l-header__inner">
-    <div class="l-header__top">
-      <h1 class="l-header__logo">
-        <a href="" class="l-header__logo-link">
-          <img src="./assets/images/common/logo.png" width="140" height="29" alt="DESIGN CAMPUS" class="l-header__logo-img">
+  <!-- ===== Header ===== -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__top">
+        <div class="l-header__logo">
+          <a href="" class="l-header__logo-link">
+            <img src="./assets/images/common/logo.png" width="140" height="29" alt="DESIGN CAMPUS" class="l-header__logo-img">
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <button id="js-hamburger-button" class="c-hamburger-menu__button" aria-label="メニュー" aria-expanded="false">
+          <span class="c-hamburger-menu__line"></span>
+        </button>
+      </div><!-- /.l-header__top -->
+
+      <!-- Drawer Menu -->
+      <div id="js-drawer-menu" class="c-drawer-menu">
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a href="#feature" class="c-nav__link">本講座の特徴</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#lessons" class="c-nav__link">講座一覧</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#faq" class="c-nav__link">よくあるご質問</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./contact/" class="c-button c-cta-button">
+          <span class="c-button__label c-cta-button__label">申し込みはこちら</span>
         </a>
-      </h1>
+      </div><!-- /.c-drawer-menu -->
+    </div><!-- /.l-header__inner -->
+  </header>
 
-      <!-- Hamburger Menu Icon -->
-      <button id="js-hamburger-button" class="c-hamburger-menu__button" aria-label="メニュー" aria-expanded="false">
-        <span class="c-hamburger-menu__line"></span>
-      </button>
-    </div><!-- /.l-header__top -->
-
-    <!-- Drawer Menu -->
-    <div id="js-drawer-menu" class="c-drawer-menu">
-      <nav class="c-nav">
-        <ul class="c-nav__list">
-          <li class="c-nav__item">
-            <a href="#feature" class="c-nav__link">本講座の特徴</a>
-          </li>
-          <li class="c-nav__item">
-            <a href="#lessons" class="c-nav__link">講座一覧</a>
-          </li>
-          <li class="c-nav__item">
-            <a href="#faq" class="c-nav__link">よくあるご質問</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="./contact/" class="c-button c-cta-button">
-        <span class="c-button__label c-cta-button__label">申し込みはこちら</span>
-      </a>
-    </div><!-- /.c-drawer-menu -->
-  </div><!-- /.l-header__inner -->
-</header>
+  <main class="l-main">
+    <!-- ===== FV ===== -->
+    <section class="l-fv">
+      <div class="l-container">
+        <div class="l-fv__catchcopy">
+          <p class="l-fv__catchcopy-lead">はじめの一歩！</p>
+          <h1 class="l-fv__catchcopy-title">1Day クリエイティブセミナー</h1>
+        </div>
+      </div><!-- /.l-container -->
+    </section>
+  </main>
+</body>
 </html>
