@@ -11,7 +11,7 @@
   -------------------------*/
   /* Text */
   --text-color-primary: #333;
-  --text-color-secondary: #0fa9b5; /* 見出し・アクセント文字（要スポイト確認） */
+  --text-color-secondary: #0fabb5;
   --text-color-thirdly: #fff;
   --text-color-body: #333;
   --text-color-header: #333;
@@ -20,14 +20,14 @@
   /* Background */
   --bg-color-body: #fff;
   --bg-color-header: #fff;
-  --bg-color-primary: #0fa9b5; /* メインカラー：ティール（要スポイト確認） */
+  --bg-color-primary: #0fabb5; /* メインカラー：ティール（要スポイト確認） */
   --bg-color-secondary: #f13c68; /* CTA：ピンク（要スポイト確認） */
-  --bg-color-thirdly: #e6f9fb; /* 悩みセクションの薄い水色（要スポイト確認） */
+  --bg-color-thirdly: #e3faff; /* 悩みセクションの薄い水色（要スポイト確認） */
   --bg-color-faq: #f5f5f5; /* FAQセクションの薄いグレー（要スポイト確認） */
-  --bg-color-footer: #0fa9b5;
+  --bg-color-footer: #0fabb5;
 
   /* Border */
-  --border-color-primary: #0fa9b5;
+  --border-color-primary: #0fabb5;
 
   /*-------------------------
     Transition
@@ -93,4 +93,18 @@ button {
 :focus-visible {
   outline: 2px solid var(--color-main);
   outline-offset: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  display: block;
+  border: 0;
+}
+
+address {
+  font-style: normal;
 }
