@@ -171,12 +171,12 @@
 .c-cta {
   padding-block: 3rem;
 
-  background-image: url(../images/bg-cta-sp.png);
+  background-image: url(../images/bg-cta-sp.webp);
 
   @media screen and (min-width: 768px) {
     padding-block: 4.125rem;
 
-    background-image: url(../images/bg-cta-pc.png);
+    background-image: url(../images/bg-cta-pc.webp);
   }
 
   & .l-container {
@@ -479,7 +479,7 @@
 
   padding-block-end: 52px;
 
-  background-image: url(../images/bg-fv-sp.png);
+  background-image: url(../images/bg-fv-sp.webp);
   background-position: top center;
   background-size: cover;
 
@@ -489,7 +489,7 @@
 
     padding-block-end: 4rem;
 
-    background-image: url(../images/bg-fv-pc.png);
+    background-image: url(../images/bg-fv-pc.webp);
   }
 }
 
