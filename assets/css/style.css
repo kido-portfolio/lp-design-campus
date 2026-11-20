@@ -1101,3 +1101,26 @@
 .c-faq__item-desc {
   width: 66.67vw;
 }
+
+/* ============================
+*  Footer
+* ========================== */
+.l-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 85px;
+
+  background-color: var(--bg-color-primary);
+
+  @media screen and (min-width: 768px) {
+    height: 5.5rem;
+  }
+}
+
+.l-footer__copyright {
+  font-size: 0.75rem;
+  line-height: 1.235;
+  color: var(--text-color-thirdly);
+}
