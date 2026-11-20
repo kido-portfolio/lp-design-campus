@@ -720,6 +720,7 @@
 
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
+
     padding-inline: 0;
   }
 }
@@ -973,6 +974,13 @@
   @media screen and (min-width: 768px) {
     padding-block: 5.5rem 6.625rem;
   }
+
+  & .l-container {
+    @media screen and (min-width: 768px) {
+      max-width: 60.625rem;
+      width: 100%;
+    }
+  }
 }
 
 .l-faq__list {
@@ -996,6 +1004,18 @@
   &[open] > .c-faq__item-summary::after {
     transform: rotate(0deg);
   }
+
+  &::details-content {
+    height: 0;
+    overflow: clip;
+    transition:
+      height 0.2s ease,
+      content-visibility 0.2s allow-discrete;
+  }
+
+  &[open]::details-content {
+    height: auto;
+  }
 }
 
 /*-------------------------
@@ -1003,18 +1023,26 @@
 -------------------------*/
 .c-faq__item-summary {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(auto, 66.7vw) auto;
   gap: 1rem;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    grid-template-columns: auto minmax(auto, 100%) auto;
+  }
+
   &::after {
     content: '';
-    flex: 0 0 17px;
     width: 17px;
     height: 11px;
     background: url('../images/arrow-faq.svg') center / contain no-repeat;
     transform: rotate(180deg);
     transition: var(--transition-base);
+
+    @media screen and (min-width: 768px) {
+      width: 28px;
+      height: 16px;
+    }
   }
 }
 
@@ -1043,7 +1071,7 @@
 }
 
 .c-faq__item-title {
-  width: 66.67vw;
+  width: 100%;
 
   font-size: 1rem;
   line-height: 1.7;
