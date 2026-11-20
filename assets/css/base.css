@@ -28,6 +28,7 @@
 
   /* Border */
   --border-color-primary: #0fabb5;
+  --border-color-second: #878787;
 
   /*-------------------------
     Transition
@@ -107,4 +108,9 @@ iframe {
 
 address {
   font-style: normal;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
 }
