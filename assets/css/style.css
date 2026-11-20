@@ -969,6 +969,10 @@
 .l-faq {
   padding-block: 4rem;
   background-color: var(--bg-color-faq);
+
+  @media screen and (min-width: 768px) {
+    padding-block: 5.5rem 6.625rem;
+  }
 }
 
 .l-faq__list {
